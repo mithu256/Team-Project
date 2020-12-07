@@ -16,7 +16,6 @@ Route::get('/patRecord',[FrontendController::class,'patientRecordPage']);
  
   /*  Doctor Page*/
 Route::get('/docpage',[FrontendController::class,'afterLoginDoctoPage']);
-Route::get('/docdetail',[FrontendController::class,'docDetailPage']); 
 Route::get('/addPrscptn',[FrontendController::class,'addPrescriptionPage']);
 /* End Doctor Page*/
 
@@ -27,3 +26,7 @@ Route::get('/recPage',[FrontendController::class,'receptPage']);
 /*  Pharmacy Page*/
 Route::get('/pharmPage',[FrontendController::class,'pharmasistPage']);
 /* End Pharmacy Page*/
+
+Route::get('/timeT',function(){
+    	return view('blade-scafolding.table');
+    });

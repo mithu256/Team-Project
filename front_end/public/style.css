@@ -1592,47 +1592,7 @@ label {
 }
 
 
-/*.dropdown1{
-    box-shadow: 3px 0 3px 0 #ccc;
-    background-color: white;
-    top: 105px;
-    overflow: hidden;
-    position: absolute;
-    left: 5px;
-    display: inline-block;
-    height: 100%
-  
-}
-.dropbtn1{
-    width: 40px;
-    height: 40px;
-}
-.dropbtn1:hover .dropdown-content1:hover {
-    display: block;
-}
-.dropdown-content1{
-    position: relative;
-    display: none;
-}
-.dropdown-content1 #col{
-    z-index: -1;
-    background-color: #E6E6E6;
-    line-height: 30px;
-    font-size: 20px;
-    height: 55px;
-    width: 200px;
-}
-.dropdown-content1 #col a{
-    bottom: 13px;
-}
 
-.dropdown-content1 #col:hover {
-    background-color: #D8D8D8;
-    display: block;
-}
-.dropdown1:hover .dropdown-content1 {
-    display: block; 
-}*/
 /*------------------------------------------------------------------
     receptionist search button page
 -------------------------------------------------------------------*/
@@ -1837,4 +1797,103 @@ background-image: -webkit-gradient(linear, left top, right top, from(#ffecd2), t
 background-image: -webkit-linear-gradient(left, #ffecd2 0%, #fcb69f 100%);
 background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); }
 
-/***scrollbar**/
+/*** end scrollbar**/
+
+/*----------------------------------------------------------------------
+                    time table 
+---------------------------------------------------------------------*/
+
+
+.calendar {
+  width: 350px;
+  margin: 50px auto 0;
+}
+
+.calendar__month {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+}
+
+.cal-month__previous,
+.cal-month__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  
+  &:hover {
+    background-color: #42A5F5;
+    box-shadow: 0 5px 5px -5px rgba(0,0,0,0.75);
+    border-radius: 50%;
+    font-weight: 800;
+    color: #111;
+  }
+}
+
+.cal-month__next {
+  right: 0;
+}
+
+.cal-month__current {
+  text-align: center;
+  color: #e1e1e1;
+}
+
+.cal-head__day,
+.cal-body__day {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+.cal-body__week,
+.calendar__head {
+  display: block;
+  height: 50px;
+  width: 350px;
+}
+
+.calendar__head {
+  line-height: 50px;
+  position: relative;
+  
+  &:after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #90CAF9;
+  }
+}
+
+.cal-body__day {
+  color: #777;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cal-day__month--current {
+  color: #e1e1e1;
+}
+
+.cal-day__day--today {
+  font-weight: 800;
+  color: #2196f3;
+}
+
+.cal-day__day--selected {
+  background-color: #2196f3;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .75);
+  border-radius: 50%;
+  color: #111;
+}

@@ -14,7 +14,7 @@
         <button type="button" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn right">Patient History</button>
     </div>
     <div class="text-center" style="padding-top: 20px;"><h1>Add Prescription</h1></div>
-    <!-- @include('blade-scafolding.tableLayer.patientHistryTable') -->
+
     <form style="padding-left: 20%;">
           <div id="patAddhistory" style="backdrop-filter: blur(5px);">
                 <div class="">
